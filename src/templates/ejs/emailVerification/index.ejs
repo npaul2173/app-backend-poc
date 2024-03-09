@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification</title>
+    <!-- <style>
+      /* Add your inline styles for the header */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #3498db;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style> -->
+  </head>
+  <body>
+    <%- include('../header.ejs') %>
+    <main>
+      <div>
+        <!-- Add your main content here -->
+        <h2>Email Verification Code</h2>
+        <p>
+          Your verification code is: <strong><%= verificationCode %></strong>
+        </p>
+      </div>
+    </main>
+    <%- include('../footer.ejs') %>
+  </body>
+</html>
